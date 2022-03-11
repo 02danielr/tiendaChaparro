@@ -1,9 +1,19 @@
+/*importes necesarios para que funcionen los demas archivos .scss creados*/
 @import "estiloContacto.scss";
 @import "estiloHeaderConNav.scss";
 @import "estiloGalerias.scss";
 @import "estiloIndex.scss";
 @import "estiloTiendas.scss";
 @import "estiloFooter";
+
+
+/*mixin para aplicar en los textos que sea posible*/
+@mixin estiloLetra( $tamanioLetra , $colorLetra){
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: $tamanioLetra;
+    color: $colorLetra;
+
+}
 
 /*reseteo de css*/
 *{
@@ -21,22 +31,19 @@ ul{
 }
 /*estilo de todos los a del sitio*/
 a{
-    color: white;
     text-decoration: none;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: large;
+    @include estiloLetra( large , white);
+    
 }
 /*estilos de todos los encabezados del sitio*/
 .encabezados{
     text-align: center;
-    font-size: xx-large;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin-top: 20px;
     margin-bottom: 20px;
-    color: black;
+    @include estiloLetra( xx-large , black)
 }
 /*media queries para el responsive design*/
 @media only screen and (max-width: 600px){

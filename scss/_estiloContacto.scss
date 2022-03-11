@@ -1,15 +1,14 @@
-
-
-/*estilo de contacto*/
-#padreContacto{
+/*estilo de contacto aplicando extend*/
+.estiloDisplay{
     display: flex;
     flex-direction: column;
-
+}
+#padreContacto{
+    @extend .estiloDisplay;
     .infoContacto{
         margin-top: 10px;
         margin-bottom: 10px;
-        display: flex;
-        flex-direction: column;
+        @extend .estiloDisplay;
         align-items: center;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         width: 100%;

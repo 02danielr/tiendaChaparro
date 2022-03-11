@@ -1,9 +1,16 @@
 /*estilo de footer*/
-#nombreFooter{
-    color: black;
-    font-size: medium;
+/*mixin para aplicar en los textos que sea posible*/
+
+@mixin estiloLetra( $tamanioLetra , $colorLetra){
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: $tamanioLetra;
+    color: $colorLetra;
+
+}
+
+#nombreFooter{
     font-weight: bold;
+    @include estiloLetra( medium , black )
 }
 footer{
     margin-top: 15px;
@@ -15,10 +22,7 @@ footer{
 }
 #logosFooter{
     text-decoration: none;
-    font-size: larger;
-    font-weight: bold;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
