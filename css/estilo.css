@@ -5,12 +5,15 @@
   display: flex;
   flex-direction: column; }
 
-#padreContacto .infoContacto {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  align-items: center;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  width: 100%; }
+#padreContacto {
+  height: 75vh; }
+  #padreContacto .infoContacto {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100%;
+    height: 20%; }
 
 /*necesario para el logo*/
 .bi-gem {
