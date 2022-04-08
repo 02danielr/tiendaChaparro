@@ -50,7 +50,7 @@ a{
     #gridPadre{
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: 830px 830px 830px 830px 830px 830px;
+        grid-template-rows: 830px 830px 830px 830px 830px 830px 830px;
         justify-items: center;
         align-items: center;
         padding: 10px;
@@ -58,7 +58,7 @@ a{
         align-content: center;
         column-gap: 20px;
         row-gap: 10px;   
-        height: 5000px;
+        height: 7500px;
     }
     #mapa{
         overflow:hidden;
@@ -79,7 +79,7 @@ a{
     #gridPadre{
         display: grid;
         grid-template-columns: 50% 50%;
-        grid-template-rows: 740px 740px 740px;
+        grid-template-rows: 740px 740px 740px 740px;
         justify-items: center;
         align-items: center;
         padding: 10px;
@@ -87,7 +87,7 @@ a{
         align-content: center;
         column-gap: 20px;
         row-gap: 10px;   
-        height: 2225px;
+        height: 3700px;
     }
     #mapa{
         overflow:hidden;
@@ -107,7 +107,7 @@ a{
     #gridPadre{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 690px 690px;
+        grid-template-rows: 690px 690px 690px;
         justify-items: center;
         align-items: center;
         padding: 10px;
@@ -115,7 +115,7 @@ a{
         align-content: center;
         column-gap: 20px;
         row-gap: 20px;   
-        height: 1400px;
+        height: 2100px;
     }
     #mapa{
         overflow:hidden;
